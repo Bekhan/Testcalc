@@ -32,7 +32,7 @@ public class Main {
         int secondNumber = isRoman ? Roman.convertToArabic(operands[1]) : Integer.parseInt(operands[1]);
 
         if (firstNumber > 99 || secondNumber > 99) {
-            throw new Exception("Числа должны быть от 1 до 10");
+            throw new Exception("Числа должны быть от 1 до 99");
         }
 
         int result = calc(firstNumber, secondNumber, operation);
